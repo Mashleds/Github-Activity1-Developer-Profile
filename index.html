@@ -1,0 +1,260 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecks' Developer Portfolio</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            color: white;
+            background: #111827;
+        }
+
+        header {
+            text-align: center;
+            background: #202e63;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 12px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 25px;
+        }
+
+        header p {
+            color: #cbd5e1;
+            margin: 8px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 8px;
+            font-size: 13px;
+        }
+
+        nav a:hover {
+            color: #7dd3fc;
+        }
+
+        main {
+            max-width: 850px;
+            margin: auto;
+        }
+
+        section {
+            background: #303d4f;
+            padding: 16px;
+            margin-bottom: 12px;
+            border: 1px solid #526174;
+            border-radius: 10px;
+        }
+
+        h2 {
+            font-size: 19px;
+            margin-top: 0;
+        }
+
+        .skill {
+            display: inline-block;
+            background: #42646c;
+            padding: 6px 12px;
+            margin: 3px;
+            border-radius: 20px;
+            font-size: 13px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 10px;
+            border-bottom: 1px solid #526174;
+        }
+
+        .projects {
+            display: flex;
+            gap: 12px;
+        }
+
+        article {
+            flex: 1;
+            background: #465568;
+            padding: 14px;
+            border-radius: 8px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            background: #202938;
+            color: white;
+            border: 1px solid #66818e;
+            border-radius: 7px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #24519a;
+            color: white;
+            border: none;
+            border-radius: 7px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #3674c9;
+        }
+
+        footer {
+            text-align: center;
+            color: #aab5c5;
+            padding: 12px;
+        }
+
+        @media (max-width: 600px) {
+            .projects {
+                flex-direction: column;
+            }
+
+            nav a {
+                display: inline-block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="home">
+        <h1>Ecks' Developer Portfolio</h1>
+        <p>BSIT Student | Aspiring Web Developer | Future Software Engineer</p>
+
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#goals">Goals</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                Hello! I'm Ecks Matthew C. Cachapero, an Information
+                Technology student interested in programming and web
+                development. I enjoy learning new technologies and
+                solving problems. Outside academics, I enjoy playing
+                basketball and working out.
+            </p>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">Java</span>
+            <span class="skill">Python</span>
+            <span class="skill">SQL</span>
+            <span class="skill">Git</span>
+            <span class="skill">Networking</span>
+        </section>
+
+        <section id="education">
+            <h2>Educational Background</h2>
+
+            <table>
+                <tr>
+                    <td>School</td>
+                    <td>National University Fairview</td>
+                </tr>
+                <tr>
+                    <td>Program</td>
+                    <td>BS Information Technology</td>
+                </tr>
+                <tr>
+                    <td>Year Level</td>
+                    <td>College Student</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+
+            <div class="projects">
+                <article>
+                    <h3>Developer Portfolio</h3>
+                    <p>
+                        A personal website showcasing my skills,
+                        educational background, and projects.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Campus Merchandise System</h3>
+                    <p>
+                        A system for browsing, checking availability,
+                        and reserving school merchandise.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section id="goals">
+            <h2>Career Goals</h2>
+
+            <ol>
+                <li>Graduate with a degree in Information Technology.</li>
+                <li>Improve my programming and development skills.</li>
+                <li>Become a professional software developer.</li>
+            </ol>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <p>
+                Email:
+                <a href="mailto:yourname@example.com" style="color:#7dd3fc;">
+                    yourname@example.com
+                </a>
+            </p>
+
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="3" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Ecks Matthew C. Cachapero | All Rights Reserved</p>
+        <p>Thank you for visiting my portfolio!</p>
+    </footer>
+
+</body>
+</html>
